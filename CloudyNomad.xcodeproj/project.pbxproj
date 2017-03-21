@@ -14,6 +14,9 @@
 		090CD26F1E8094DD00F77402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090CD26D1E8094DD00F77402 /* LaunchScreen.storyboard */; };
 		090CD27A1E8094DD00F77402 /* CloudyNomadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090CD2791E8094DD00F77402 /* CloudyNomadTests.swift */; };
 		090CD2851E8094DE00F77402 /* CloudyNomadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090CD2841E8094DE00F77402 /* CloudyNomadUITests.swift */; };
+		090DAA251E80D9B700D3DBF1 /* WeatherViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 090DAA241E80D9B700D3DBF1 /* WeatherViewModel .swift */; };
+		090DAA271E80DBCA00D3DBF1 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090DAA261E80DBCA00D3DBF1 /* RequestBuilder.swift */; };
+		090DAA291E80DC6800D3DBF1 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090DAA281E80DC6800D3DBF1 /* WeatherModel.swift */; };
 		A45722BA715CD8D2ACAA79C5 /* Pods_CloudyNomad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56324118CCD552343F8FACB /* Pods_CloudyNomad.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,9 @@
 		090CD2801E8094DE00F77402 /* CloudyNomadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudyNomadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		090CD2841E8094DE00F77402 /* CloudyNomadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyNomadUITests.swift; sourceTree = "<group>"; };
 		090CD2861E8094DE00F77402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090DAA241E80D9B700D3DBF1 /* WeatherViewModel .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WeatherViewModel .swift"; sourceTree = "<group>"; };
+		090DAA261E80DBCA00D3DBF1 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		090DAA281E80DC6800D3DBF1 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		0B1EF864448736300EBA563A /* Pods-CloudyNomad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudyNomad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudyNomad/Pods-CloudyNomad.debug.xcconfig"; sourceTree = "<group>"; };
 		34AF5BED198E28EBD4D8C5CC /* Pods-CloudyNomad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudyNomad.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudyNomad/Pods-CloudyNomad.release.xcconfig"; sourceTree = "<group>"; };
 		E56324118CCD552343F8FACB /* Pods_CloudyNomad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudyNomad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +112,9 @@
 			children = (
 				090CD2641E8094DD00F77402 /* AppDelegate.swift */,
 				090CD2661E8094DD00F77402 /* ViewController.swift */,
+				090DAA261E80DBCA00D3DBF1 /* RequestBuilder.swift */,
+				090DAA241E80D9B700D3DBF1 /* WeatherViewModel .swift */,
+				090DAA281E80DC6800D3DBF1 /* WeatherModel.swift */,
 				090CD2681E8094DD00F77402 /* Main.storyboard */,
 				090CD26B1E8094DD00F77402 /* Assets.xcassets */,
 				090CD26D1E8094DD00F77402 /* LaunchScreen.storyboard */,
@@ -337,8 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090DAA251E80D9B700D3DBF1 /* WeatherViewModel .swift in Sources */,
 				090CD2671E8094DD00F77402 /* ViewController.swift in Sources */,
 				090CD2651E8094DD00F77402 /* AppDelegate.swift in Sources */,
+				090DAA271E80DBCA00D3DBF1 /* RequestBuilder.swift in Sources */,
+				090DAA291E80DC6800D3DBF1 /* WeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +603,7 @@
 				090CD28B1E8094DE00F77402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		090CD28C1E8094DE00F77402 /* Build configuration list for PBXNativeTarget "CloudyNomadTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +612,7 @@
 				090CD28E1E8094DE00F77402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		090CD28F1E8094DE00F77402 /* Build configuration list for PBXNativeTarget "CloudyNomadUITests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +621,7 @@
 				090CD2911E8094DE00F77402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
