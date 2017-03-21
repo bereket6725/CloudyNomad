@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090CD2651E8094DD00F77402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090CD2641E8094DD00F77402 /* AppDelegate.swift */; };
+		090CD2671E8094DD00F77402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090CD2661E8094DD00F77402 /* ViewController.swift */; };
+		090CD26A1E8094DD00F77402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090CD2681E8094DD00F77402 /* Main.storyboard */; };
+		090CD26C1E8094DD00F77402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090CD26B1E8094DD00F77402 /* Assets.xcassets */; };
+		090CD26F1E8094DD00F77402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090CD26D1E8094DD00F77402 /* LaunchScreen.storyboard */; };
+		090CD27A1E8094DD00F77402 /* CloudyNomadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090CD2791E8094DD00F77402 /* CloudyNomadTests.swift */; };
+		090CD2851E8094DE00F77402 /* CloudyNomadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090CD2841E8094DE00F77402 /* CloudyNomadUITests.swift */; };
+		A45722BA715CD8D2ACAA79C5 /* Pods_CloudyNomad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56324118CCD552343F8FACB /* Pods_CloudyNomad.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		090CD2761E8094DD00F77402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090CD2591E8094DD00F77402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 090CD2601E8094DD00F77402;
+			remoteInfo = CloudyNomad;
+		};
+		090CD2811E8094DE00F77402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090CD2591E8094DD00F77402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 090CD2601E8094DD00F77402;
+			remoteInfo = CloudyNomad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		090CD2611E8094DD00F77402 /* CloudyNomad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudyNomad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		090CD2641E8094DD00F77402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		090CD2661E8094DD00F77402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		090CD2691E8094DD00F77402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		090CD26B1E8094DD00F77402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		090CD26E1E8094DD00F77402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		090CD2701E8094DD00F77402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090CD2751E8094DD00F77402 /* CloudyNomadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudyNomadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		090CD2791E8094DD00F77402 /* CloudyNomadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyNomadTests.swift; sourceTree = "<group>"; };
+		090CD27B1E8094DD00F77402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090CD2801E8094DE00F77402 /* CloudyNomadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudyNomadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		090CD2841E8094DE00F77402 /* CloudyNomadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyNomadUITests.swift; sourceTree = "<group>"; };
+		090CD2861E8094DE00F77402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1EF864448736300EBA563A /* Pods-CloudyNomad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudyNomad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudyNomad/Pods-CloudyNomad.debug.xcconfig"; sourceTree = "<group>"; };
+		34AF5BED198E28EBD4D8C5CC /* Pods-CloudyNomad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudyNomad.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudyNomad/Pods-CloudyNomad.release.xcconfig"; sourceTree = "<group>"; };
+		E56324118CCD552343F8FACB /* Pods_CloudyNomad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudyNomad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090CD25E1E8094DD00F77402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A45722BA715CD8D2ACAA79C5 /* Pods_CloudyNomad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090CD2721E8094DD00F77402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090CD27D1E8094DE00F77402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090CD2581E8094DD00F77402 = {
+			isa = PBXGroup;
+			children = (
+				090CD2631E8094DD00F77402 /* CloudyNomad */,
+				090CD2781E8094DD00F77402 /* CloudyNomadTests */,
+				090CD2831E8094DE00F77402 /* CloudyNomadUITests */,
+				090CD2621E8094DD00F77402 /* Products */,
+				DD7009BDFC7EF6350D6A6D5C /* Pods */,
+				773BAB87032D60EEB22DA7F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		090CD2621E8094DD00F77402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				090CD2611E8094DD00F77402 /* CloudyNomad.app */,
+				090CD2751E8094DD00F77402 /* CloudyNomadTests.xctest */,
+				090CD2801E8094DE00F77402 /* CloudyNomadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090CD2631E8094DD00F77402 /* CloudyNomad */ = {
+			isa = PBXGroup;
+			children = (
+				090CD2641E8094DD00F77402 /* AppDelegate.swift */,
+				090CD2661E8094DD00F77402 /* ViewController.swift */,
+				090CD2681E8094DD00F77402 /* Main.storyboard */,
+				090CD26B1E8094DD00F77402 /* Assets.xcassets */,
+				090CD26D1E8094DD00F77402 /* LaunchScreen.storyboard */,
+				090CD2701E8094DD00F77402 /* Info.plist */,
+			);
+			path = CloudyNomad;
+			sourceTree = "<group>";
+		};
+		090CD2781E8094DD00F77402 /* CloudyNomadTests */ = {
+			isa = PBXGroup;
+			children = (
+				090CD2791E8094DD00F77402 /* CloudyNomadTests.swift */,
+				090CD27B1E8094DD00F77402 /* Info.plist */,
+			);
+			path = CloudyNomadTests;
+			sourceTree = "<group>";
+		};
+		090CD2831E8094DE00F77402 /* CloudyNomadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				090CD2841E8094DE00F77402 /* CloudyNomadUITests.swift */,
+				090CD2861E8094DE00F77402 /* Info.plist */,
+			);
+			path = CloudyNomadUITests;
+			sourceTree = "<group>";
+		};
+		773BAB87032D60EEB22DA7F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E56324118CCD552343F8FACB /* Pods_CloudyNomad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD7009BDFC7EF6350D6A6D5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B1EF864448736300EBA563A /* Pods-CloudyNomad.debug.xcconfig */,
+				34AF5BED198E28EBD4D8C5CC /* Pods-CloudyNomad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		090CD2601E8094DD00F77402 /* CloudyNomad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090CD2891E8094DE00F77402 /* Build configuration list for PBXNativeTarget "CloudyNomad" */;
+			buildPhases = (
+				D133A626D90A4D1E35964B26 /* [CP] Check Pods Manifest.lock */,
+				090CD25D1E8094DD00F77402 /* Sources */,
+				090CD25E1E8094DD00F77402 /* Frameworks */,
+				090CD25F1E8094DD00F77402 /* Resources */,
+				72D4030D22D828F9964FCBB4 /* [CP] Embed Pods Frameworks */,
+				027181824C2A07EAF29D4309 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudyNomad;
+			productName = CloudyNomad;
+			productReference = 090CD2611E8094DD00F77402 /* CloudyNomad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		090CD2741E8094DD00F77402 /* CloudyNomadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090CD28C1E8094DE00F77402 /* Build configuration list for PBXNativeTarget "CloudyNomadTests" */;
+			buildPhases = (
+				090CD2711E8094DD00F77402 /* Sources */,
+				090CD2721E8094DD00F77402 /* Frameworks */,
+				090CD2731E8094DD00F77402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				090CD2771E8094DD00F77402 /* PBXTargetDependency */,
+			);
+			name = CloudyNomadTests;
+			productName = CloudyNomadTests;
+			productReference = 090CD2751E8094DD00F77402 /* CloudyNomadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		090CD27F1E8094DE00F77402 /* CloudyNomadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090CD28F1E8094DE00F77402 /* Build configuration list for PBXNativeTarget "CloudyNomadUITests" */;
+			buildPhases = (
+				090CD27C1E8094DE00F77402 /* Sources */,
+				090CD27D1E8094DE00F77402 /* Frameworks */,
+				090CD27E1E8094DE00F77402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				090CD2821E8094DE00F77402 /* PBXTargetDependency */,
+			);
+			name = CloudyNomadUITests;
+			productName = CloudyNomadUITests;
+			productReference = 090CD2801E8094DE00F77402 /* CloudyNomadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090CD2591E8094DD00F77402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Bereket Ghebremedhin";
+				TargetAttributes = {
+					090CD2601E8094DD00F77402 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MG3SWKAT37;
+						ProvisioningStyle = Automatic;
+					};
+					090CD2741E8094DD00F77402 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MG3SWKAT37;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 090CD2601E8094DD00F77402;
+					};
+					090CD27F1E8094DE00F77402 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MG3SWKAT37;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 090CD2601E8094DD00F77402;
+					};
+				};
+			};
+			buildConfigurationList = 090CD25C1E8094DD00F77402 /* Build configuration list for PBXProject "CloudyNomad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 090CD2581E8094DD00F77402;
+			productRefGroup = 090CD2621E8094DD00F77402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				090CD2601E8094DD00F77402 /* CloudyNomad */,
+				090CD2741E8094DD00F77402 /* CloudyNomadTests */,
+				090CD27F1E8094DE00F77402 /* CloudyNomadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		090CD25F1E8094DD00F77402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090CD26F1E8094DD00F77402 /* LaunchScreen.storyboard in Resources */,
+				090CD26C1E8094DD00F77402 /* Assets.xcassets in Resources */,
+				090CD26A1E8094DD00F77402 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090CD2731E8094DD00F77402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090CD27E1E8094DE00F77402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		027181824C2A07EAF29D4309 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudyNomad/Pods-CloudyNomad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72D4030D22D828F9964FCBB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudyNomad/Pods-CloudyNomad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D133A626D90A4D1E35964B26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090CD25D1E8094DD00F77402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090CD2671E8094DD00F77402 /* ViewController.swift in Sources */,
+				090CD2651E8094DD00F77402 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090CD2711E8094DD00F77402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090CD27A1E8094DD00F77402 /* CloudyNomadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090CD27C1E8094DE00F77402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090CD2851E8094DE00F77402 /* CloudyNomadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		090CD2771E8094DD00F77402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 090CD2601E8094DD00F77402 /* CloudyNomad */;
+			targetProxy = 090CD2761E8094DD00F77402 /* PBXContainerItemProxy */;
+		};
+		090CD2821E8094DE00F77402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 090CD2601E8094DD00F77402 /* CloudyNomad */;
+			targetProxy = 090CD2811E8094DE00F77402 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		090CD2681E8094DD00F77402 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090CD2691E8094DD00F77402 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		090CD26D1E8094DD00F77402 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090CD26E1E8094DD00F77402 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		090CD2871E8094DE00F77402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		090CD2881E8094DE00F77402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		090CD28A1E8094DE00F77402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1EF864448736300EBA563A /* Pods-CloudyNomad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MG3SWKAT37;
+				INFOPLIST_FILE = CloudyNomad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BereketGhebremedhin.CloudyNomad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		090CD28B1E8094DE00F77402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34AF5BED198E28EBD4D8C5CC /* Pods-CloudyNomad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MG3SWKAT37;
+				INFOPLIST_FILE = CloudyNomad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BereketGhebremedhin.CloudyNomad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		090CD28D1E8094DE00F77402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MG3SWKAT37;
+				INFOPLIST_FILE = CloudyNomadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BereketGhebremedhin.CloudyNomadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudyNomad.app/CloudyNomad";
+			};
+			name = Debug;
+		};
+		090CD28E1E8094DE00F77402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MG3SWKAT37;
+				INFOPLIST_FILE = CloudyNomadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BereketGhebremedhin.CloudyNomadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudyNomad.app/CloudyNomad";
+			};
+			name = Release;
+		};
+		090CD2901E8094DE00F77402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MG3SWKAT37;
+				INFOPLIST_FILE = CloudyNomadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BereketGhebremedhin.CloudyNomadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CloudyNomad;
+			};
+			name = Debug;
+		};
+		090CD2911E8094DE00F77402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MG3SWKAT37;
+				INFOPLIST_FILE = CloudyNomadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BereketGhebremedhin.CloudyNomadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CloudyNomad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		090CD25C1E8094DD00F77402 /* Build configuration list for PBXProject "CloudyNomad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090CD2871E8094DE00F77402 /* Debug */,
+				090CD2881E8094DE00F77402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090CD2891E8094DE00F77402 /* Build configuration list for PBXNativeTarget "CloudyNomad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090CD28A1E8094DE00F77402 /* Debug */,
+				090CD28B1E8094DE00F77402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		090CD28C1E8094DE00F77402 /* Build configuration list for PBXNativeTarget "CloudyNomadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090CD28D1E8094DE00F77402 /* Debug */,
+				090CD28E1E8094DE00F77402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		090CD28F1E8094DE00F77402 /* Build configuration list for PBXNativeTarget "CloudyNomadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090CD2901E8094DE00F77402 /* Debug */,
+				090CD2911E8094DE00F77402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090CD2591E8094DD00F77402 /* Project object */;
+}
