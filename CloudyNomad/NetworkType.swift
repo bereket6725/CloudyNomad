@@ -17,7 +17,7 @@ enum Result <T, E:Error>{
 
 enum RequestType{
     case get
-    case post
+    case post([String: Any])
     
     var methodType: Alamofire.HTTPMethod {
         switch self {
