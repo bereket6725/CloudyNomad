@@ -16,8 +16,12 @@
 		090CD2851E8094DE00F77402 /* CloudyNomadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090CD2841E8094DE00F77402 /* CloudyNomadUITests.swift */; };
 		090DAA251E80D9B700D3DBF1 /* WeatherViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 090DAA241E80D9B700D3DBF1 /* WeatherViewModel .swift */; };
 		090DAA291E80DC6800D3DBF1 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090DAA281E80DC6800D3DBF1 /* WeatherModel.swift */; };
-		090DAA2B1E80DDF100D3DBF1 /* NetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090DAA2A1E80DDF100D3DBF1 /* NetworkType.swift */; };
 		A45722BA715CD8D2ACAA79C5 /* Pods_CloudyNomad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56324118CCD552343F8FACB /* Pods_CloudyNomad.framework */; };
+		AB531FD01E83269A000128E4 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB531FCF1E83269A000128E4 /* RequestBuilder.swift */; };
+		AB531FD21E8326D7000128E4 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB531FD11E8326D7000128E4 /* Parsable.swift */; };
+		AB531FD71E83270D000128E4 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB531FD61E83270D000128E4 /* Networkable.swift */; };
+		AB531FD91E83271D000128E4 /* RequestBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB531FD81E83271D000128E4 /* RequestBuildable.swift */; };
+		AB531FDC1E83276B000128E4 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB531FDB1E83276B000128E4 /* EventModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +57,13 @@
 		090CD2861E8094DE00F77402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090DAA241E80D9B700D3DBF1 /* WeatherViewModel .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WeatherViewModel .swift"; sourceTree = "<group>"; };
 		090DAA281E80DC6800D3DBF1 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
-		090DAA2A1E80DDF100D3DBF1 /* NetworkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkType.swift; sourceTree = "<group>"; };
 		0B1EF864448736300EBA563A /* Pods-CloudyNomad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudyNomad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudyNomad/Pods-CloudyNomad.debug.xcconfig"; sourceTree = "<group>"; };
 		34AF5BED198E28EBD4D8C5CC /* Pods-CloudyNomad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudyNomad.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudyNomad/Pods-CloudyNomad.release.xcconfig"; sourceTree = "<group>"; };
+		AB531FCF1E83269A000128E4 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		AB531FD11E8326D7000128E4 /* Parsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		AB531FD61E83270D000128E4 /* Networkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		AB531FD81E83271D000128E4 /* RequestBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuildable.swift; sourceTree = "<group>"; };
+		AB531FDB1E83276B000128E4 /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		E56324118CCD552343F8FACB /* Pods_CloudyNomad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudyNomad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,11 +119,12 @@
 			isa = PBXGroup;
 			children = (
 				090CD2641E8094DD00F77402 /* AppDelegate.swift */,
-				090CD2661E8094DD00F77402 /* ViewController.swift */,
-				090DAA241E80D9B700D3DBF1 /* WeatherViewModel .swift */,
-				090DAA2A1E80DDF100D3DBF1 /* NetworkType.swift */,
-				090DAA281E80DC6800D3DBF1 /* WeatherModel.swift */,
-				090CD2681E8094DD00F77402 /* Main.storyboard */,
+				AB531FD31E8326DE000128E4 /* Protocols */,
+				AB531FDA1E832742000128E4 /* Model */,
+				AB531FDF1E832812000128E4 /* View */,
+				AB531FDD1E8327B0000128E4 /* Controller */,
+				AB531FDE1E8327F1000128E4 /* ViewModel */,
+				AB531FE21E832893000128E4 /* NetworkingLayer */,
 				090CD26B1E8094DD00F77402 /* Assets.xcassets */,
 				090CD26D1E8094DD00F77402 /* LaunchScreen.storyboard */,
 				090CD2701E8094DD00F77402 /* Info.plist */,
@@ -147,6 +156,57 @@
 				E56324118CCD552343F8FACB /* Pods_CloudyNomad.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB531FD31E8326DE000128E4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AB531FD11E8326D7000128E4 /* Parsable.swift */,
+				AB531FD61E83270D000128E4 /* Networkable.swift */,
+				AB531FD81E83271D000128E4 /* RequestBuildable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		AB531FDA1E832742000128E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				090DAA281E80DC6800D3DBF1 /* WeatherModel.swift */,
+				AB531FDB1E83276B000128E4 /* EventModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AB531FDD1E8327B0000128E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				090CD2661E8094DD00F77402 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AB531FDE1E8327F1000128E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				090DAA241E80D9B700D3DBF1 /* WeatherViewModel .swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB531FDF1E832812000128E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				090CD2681E8094DD00F77402 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AB531FE21E832893000128E4 /* NetworkingLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AB531FCF1E83269A000128E4 /* RequestBuilder.swift */,
+			);
+			name = NetworkingLayer;
 			sourceTree = "<group>";
 		};
 		DD7009BDFC7EF6350D6A6D5C /* Pods */ = {
@@ -346,11 +406,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB531FD01E83269A000128E4 /* RequestBuilder.swift in Sources */,
+				AB531FDC1E83276B000128E4 /* EventModel.swift in Sources */,
 				090DAA251E80D9B700D3DBF1 /* WeatherViewModel .swift in Sources */,
 				090CD2671E8094DD00F77402 /* ViewController.swift in Sources */,
-				090DAA2B1E80DDF100D3DBF1 /* NetworkType.swift in Sources */,
+				AB531FD71E83270D000128E4 /* Networkable.swift in Sources */,
 				090CD2651E8094DD00F77402 /* AppDelegate.swift in Sources */,
 				090DAA291E80DC6800D3DBF1 /* WeatherModel.swift in Sources */,
+				AB531FD91E83271D000128E4 /* RequestBuildable.swift in Sources */,
+				AB531FD21E8326D7000128E4 /* Parsable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

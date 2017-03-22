@@ -1,14 +1,13 @@
 //
-//  NetworkType.swift
+//  RequestBuilder.swift
 //  CloudyNomad
 //
-//  Created by Bereket Ghebremedhin on 3/21/17.
+//  Created by Bereket Ghebremedhin on 3/22/17.
 //  Copyright © 2017 Bereket Ghebremedhin. All rights reserved.
 //
 
 import Foundation
 import Alamofire
-
 
 enum Result <T, E:Error>{
     case success(T)
@@ -23,8 +22,10 @@ enum RequestType{
         switch self {
         case .get:
             return .get
-        case .post([String: Any]):
+        case .post:
             return .post
         }
     }
 }
+
+
