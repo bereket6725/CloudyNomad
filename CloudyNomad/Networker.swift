@@ -17,7 +17,7 @@ enum RequestError: Error{
 }
 
 
-
+//handles networking for OpenWeatherMaps
 struct WeatherNetworker: GetRequestable{
     static func get(builder: RequestBuildable, completion: @escaping (Result<[WeatherModel], RequestError>) -> Void) {
         requestData(builder: builder) { result in
@@ -28,7 +28,7 @@ struct WeatherNetworker: GetRequestable{
         }
     }
 }
-
+//handles Netowrking for GoogleTimeZone
 struct GoogleTimeZoneNetworker: GetRequestable{
     static func get(builder: RequestBuildable, completion: @escaping (Result<[TimeZone], RequestError>) -> Void) {
         requestData(builder: builder) { result in
@@ -39,7 +39,7 @@ struct GoogleTimeZoneNetworker: GetRequestable{
         }
     }
 }
-
+//handles Networking for Meetup 
 struct MeetupNetworker: Networkable{
     static func get(builder: RequestBuildable, completion: @escaping (Result<[Event], RequestError>) -> Void) {
         requestData(builder: builder) { result in
