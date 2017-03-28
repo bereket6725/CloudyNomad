@@ -15,8 +15,6 @@ enum RequestError: Error{
     case invalidData
     case defaultRequestError
 }
-
-
 //handles networking for OpenWeatherMaps
 struct WeatherNetworker: GetRequestable{
     static func get(builder: RequestBuildable, completion: @escaping (Result<[WeatherModel], RequestError>) -> Void) {
@@ -55,8 +53,6 @@ struct MeetupNetworker: Networkable{
             case .success: completion(.success())
             case .failure(let error): completion(.failure(error))
             }
-            
         }
     }
-        
 }

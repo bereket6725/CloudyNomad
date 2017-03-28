@@ -13,7 +13,6 @@ protocol GetRequestable{
     associatedtype P: Parsable
     static func get(builder: RequestBuildable, completion: @escaping(Result<[P], RequestError>) -> Void)
 }
-
 extension GetRequestable{
     static func requestData(builder: RequestBuildable, completion: @escaping (Result<Data, RequestError>) -> Void){
         guard let url = builder.endpoint else { completion(.failure(.invalidURL)); return }

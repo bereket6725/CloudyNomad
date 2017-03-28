@@ -12,7 +12,6 @@ import Alamofire
 protocol PostRequestable{
     static func post(builder: RequestBuildable, completion: @escaping(Result<Void, RequestError>) -> Void)
 }
-
 extension PostRequestable{
     static func updateData(builder: RequestBuildable, completion: @escaping(Result<Void, RequestError>) -> Void){
         guard let url = builder.endpoint else { completion(.failure(.invalidURL)); return }
