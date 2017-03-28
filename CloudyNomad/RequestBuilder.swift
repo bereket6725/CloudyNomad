@@ -14,6 +14,14 @@ enum Result <T, E:Error>{
     case failure(E)
 }
 
+
+struct OpenWeatherMapsRequest{
+}
+struct GoogleTimeZoneRequest{
+}
+struct MeetupRequest{
+}
+
 enum RequestType{
     case get
     case post([String: Any])
@@ -28,4 +36,9 @@ enum RequestType{
     }
 }
 
+struct BaseURLStrings{
+    fileprivate static let openWeatherMaps = ""
+    fileprivate static let googleTimeZone = ""
+    fileprivate static let Meetup = ""
+}
 

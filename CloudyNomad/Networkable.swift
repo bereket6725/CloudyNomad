@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import Alamofire
+
+protocol Networkable{
+    associatedtype P: Parsable
+    static func get(builder: RequestBuildable, completion: @escaping(Result<[P], RequestError>) -> Void)
+    static func post(builder: RequestBuildable, completion: @escaping(Result<Void, RequestError>) -> Void)
+}
+
+extension Networkable{
+    static func requestData(builder: RequestBuildable, completion: @escaping (Result<Data, RequestError>) -> Void){
+    }
+}
