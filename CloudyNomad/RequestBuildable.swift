@@ -10,5 +10,5 @@ import Foundation
 
 protocol RequestBuildable{
     var requestType: RequestType { get }
-    var URL: URL? { get }
+    var endpoint: URL? { get }
 }
