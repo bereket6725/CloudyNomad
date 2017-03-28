@@ -27,6 +27,17 @@ struct WeatherNetworker: GetRequestable{
     }
 }
 
+struct GoogleTimeZoneNetworker{
+    static func get(builder: RequestBuildable, completion: @escaping (Result<[WeatherModel], RequestError>) -> Void) {
+        requestData(builder: builder) { result in
+            switch result{
+            case .success(let data):  completion(.success(WeatherModel.parseJSON(data: data)))
+            case .failure(let error): completion(.failure(error))
+            }
+        }
+    }
+}
+
 struct MeetupNetworker: Networkable{
     static func get(builder: RequestBuildable, completion: @escaping (Result<[Event], RequestError>) -> Void) {
         requestData(builder: builder) { result in
