@@ -18,15 +18,14 @@ extension GetRequestable{
     static func requestData(builder: RequestBuildable, completion: @escaping (Result<Data, RequestError>) -> Void){
         guard let url = builder.endpoint else { completion(.failure(.invalidURL)); return }
         let type = builder.requestType
-        
         switch type{
         case .get:
             Alamofire.request(url).responseJSON{ response in
                 guard let rawData = response.data else {completion(.failure(.invalidData)); return }
                 completion(.success(rawData))
             }
-        default:
-            fatalError("invalid request type: \(type). Expected .get")
+        //only get requests, otherwise kill the app
+        default: fatalError("invalid request type: \(type). Expected .get")
         }
     }
 }

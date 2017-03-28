@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-//makes post requests 
+//makes post requests
 protocol PostRequestable{
     static func post(builder: RequestBuildable, completion: @escaping(Result<Void, RequestError>) -> Void)
 }
@@ -20,6 +20,7 @@ extension PostRequestable{
         
         switch builder.requestType{
         case .post(let parameters): params = parameters
+        //should only have Post requests, otherwise, the app should fails
         default: fatalError("invalid Request type: \(builder.requestType) expected .post")
         }
         Alamofire.request(url, method: builder.requestType.methodType, parameters: params).responseJSON{ response in

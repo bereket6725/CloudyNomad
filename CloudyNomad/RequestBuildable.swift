@@ -8,6 +8,7 @@
 
 import Foundation
 
+//this will be the foundation that all our Networkers will share to make requests
 protocol RequestBuildable{
     var requestType: RequestType { get }
     var endpoint: URL? { get }
