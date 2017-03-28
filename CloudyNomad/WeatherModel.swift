@@ -8,5 +8,11 @@
 
 import Foundation
 
-struct WeatherModel{
+struct WeatherModel: Parsable{
+    
+    
+    static func parseJSON(data: Data) -> [WeatherModel] {
+        return [WeatherModel]()
+    }
+
 }

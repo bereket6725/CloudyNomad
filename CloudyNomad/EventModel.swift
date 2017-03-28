@@ -8,5 +8,8 @@
 
 import Foundation
 
-struct Event{
+struct Event: Parsable{
+    static func parseJSON(data: Data) -> [Event]{
+        return [Event]()
+    }
 }

@@ -14,7 +14,21 @@ enum RequestError: Error{
     case defaultRequestError
 }
 
-struct Networker{
-    
-    
+struct WeatherNetworker: Networkable{
+    static func get(builder: RequestBuildable, completion: @escaping (Result<[WeatherModel], RequestError>) -> Void) {
+        requestData(builder: builder) { result in
+            switch result{
+            case .success(let data):  completion(.sucess(WeatherModel.parseJSON(data: data)))
+            case .failure(let error): completion(.failure(error))
+            }
+        }
+    }
+    static func post(builder: RequestBuildable, completion: @escaping (Result<Void, RequestError>) -> Void) {
+        updateData(builder: builder) { result in
+            switch result{
+            case .success: completion(.success())
+            case .failure(let error): completion(.failure(error))
+            }
+        }
+    }
 }
