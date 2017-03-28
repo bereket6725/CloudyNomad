@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Alamofire
+
 
 enum RequestError: Error{
     case invalidURL
@@ -14,21 +16,34 @@ enum RequestError: Error{
     case defaultRequestError
 }
 
-struct WeatherNetworker: Networkable{
+struct WeatherNetworker: GetRequestable{
     static func get(builder: RequestBuildable, completion: @escaping (Result<[WeatherModel], RequestError>) -> Void) {
         requestData(builder: builder) { result in
             switch result{
-            case .success(let data):  completion(.sucess(WeatherModel.parseJSON(data: data)))
+            case .success(let data):  completion(.success(WeatherModel.parseJSON(data: data)))
             case .failure(let error): completion(.failure(error))
             }
         }
     }
+}
+
+struct MeetupNetworker: Networkable{
+    static func get(builder: RequestBuildable, completion: @escaping (Result<[Event], RequestError>) -> Void) {
+        requestData(builder: builder) { result in
+            switch result{
+            case .success(let data):  completion(.success(Event.parseJSON(data: data)))
+            case .failure(let error): completion(.failure(error))
+            }
+        }
+    }    
     static func post(builder: RequestBuildable, completion: @escaping (Result<Void, RequestError>) -> Void) {
-        updateData(builder: builder) { result in
+        updateData(builder: builder){ result in
             switch result{
             case .success: completion(.success())
             case .failure(let error): completion(.failure(error))
             }
+            
         }
     }
+        
 }
