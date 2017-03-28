@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//allows our models to handle its own parsing
 protocol Parsable{
     associatedtype T
     static func parseJSON(data: Data) -> T

@@ -9,12 +9,14 @@
 import Foundation
 import Alamofire
 
-
+//handles request errors
 enum RequestError: Error{
     case invalidURL
     case invalidData
     case defaultRequestError
 }
+
+
 
 struct WeatherNetworker: GetRequestable{
     static func get(builder: RequestBuildable, completion: @escaping (Result<[WeatherModel], RequestError>) -> Void) {
@@ -28,10 +30,10 @@ struct WeatherNetworker: GetRequestable{
 }
 
 struct GoogleTimeZoneNetworker: GetRequestable{
-    static func get(builder: RequestBuildable, completion: @escaping (Result<[WeatherModel], RequestError>) -> Void) {
+    static func get(builder: RequestBuildable, completion: @escaping (Result<[TimeZone], RequestError>) -> Void) {
         requestData(builder: builder) { result in
             switch result{
-            case .success(let data):  completion(.success(WeatherModel.parseJSON(data: data)))
+            case .success(let data):  completion(.success(TimeZone.parseJSON(data: data)))
             case .failure(let error): completion(.failure(error))
             }
         }

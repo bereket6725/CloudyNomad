@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-
+//makes get requests
 protocol GetRequestable{
     associatedtype P: Parsable
     static func get(builder: RequestBuildable, completion: @escaping(Result<[P], RequestError>) -> Void)

@@ -22,10 +22,10 @@
 		AB531FD71E83270D000128E4 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB531FD61E83270D000128E4 /* Networkable.swift */; };
 		AB531FD91E83271D000128E4 /* RequestBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB531FD81E83271D000128E4 /* RequestBuildable.swift */; };
 		AB531FDC1E83276B000128E4 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB531FDB1E83276B000128E4 /* EventModel.swift */; };
-		AB5E909E1E89EBB900E9FED4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E909D1E89EBB900E9FED4 /* Constants.swift */; };
 		AB5E90A01E89EDD800E9FED4 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E909F1E89EDD800E9FED4 /* Networker.swift */; };
 		AB5E90A21E89FF2800E9FED4 /* GetRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E90A11E89FF2800E9FED4 /* GetRequestable.swift */; };
 		AB5E90A41E89FF3600E9FED4 /* PostRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E90A31E89FF3600E9FED4 /* PostRequestable.swift */; };
+		AB5E90A61E8A03FA00E9FED4 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E90A51E8A03FA00E9FED4 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +68,10 @@
 		AB531FD61E83270D000128E4 /* Networkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
 		AB531FD81E83271D000128E4 /* RequestBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuildable.swift; sourceTree = "<group>"; };
 		AB531FDB1E83276B000128E4 /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
-		AB5E909D1E89EBB900E9FED4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AB5E909F1E89EDD800E9FED4 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		AB5E90A11E89FF2800E9FED4 /* GetRequestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRequestable.swift; sourceTree = "<group>"; };
 		AB5E90A31E89FF3600E9FED4 /* PostRequestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequestable.swift; sourceTree = "<group>"; };
+		AB5E90A51E8A03FA00E9FED4 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E56324118CCD552343F8FACB /* Pods_CloudyNomad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudyNomad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -180,9 +180,9 @@
 		AB531FDA1E832742000128E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AB5E909D1E89EBB900E9FED4 /* Constants.swift */,
 				090DAA281E80DC6800D3DBF1 /* WeatherModel.swift */,
 				AB531FDB1E83276B000128E4 /* EventModel.swift */,
+				AB5E90A51E8A03FA00E9FED4 /* String.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -419,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB5E90A01E89EDD800E9FED4 /* Networker.swift in Sources */,
+				AB5E90A61E8A03FA00E9FED4 /* String.swift in Sources */,
 				AB531FD01E83269A000128E4 /* RequestBuilder.swift in Sources */,
 				AB531FDC1E83276B000128E4 /* EventModel.swift in Sources */,
 				090DAA251E80D9B700D3DBF1 /* WeatherViewModel .swift in Sources */,
@@ -426,7 +427,6 @@
 				AB5E90A41E89FF3600E9FED4 /* PostRequestable.swift in Sources */,
 				090CD2671E8094DD00F77402 /* ViewController.swift in Sources */,
 				AB531FD71E83270D000128E4 /* Networkable.swift in Sources */,
-				AB5E909E1E89EBB900E9FED4 /* Constants.swift in Sources */,
 				090CD2651E8094DD00F77402 /* AppDelegate.swift in Sources */,
 				090DAA291E80DC6800D3DBF1 /* WeatherModel.swift in Sources */,
 				AB531FD91E83271D000128E4 /* RequestBuildable.swift in Sources */,

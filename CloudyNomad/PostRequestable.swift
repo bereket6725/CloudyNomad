@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-
+//makes post requests 
 protocol PostRequestable{
     static func post(builder: RequestBuildable, completion: @escaping(Result<Void, RequestError>) -> Void)
 }

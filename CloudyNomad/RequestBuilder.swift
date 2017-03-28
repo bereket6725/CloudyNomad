@@ -36,6 +36,8 @@ enum RequestType{
     }
 }
 
+//Our Request buildables will have the baseURLs and will create the URL that will eventually be sent in the request. 
+//So Im making these fileprivate because I dont see anyone else needing this information
 struct BaseURLStrings{
     fileprivate static let openWeatherMaps = ""
     fileprivate static let googleTimeZone = ""
