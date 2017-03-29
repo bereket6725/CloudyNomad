@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-//for models that handle get and post requests. perhaps as we scale and add more request types,
+//for models that handle get and post requests. perhaps as we scale we could add more request types,
 //we can expand what this inherits from
 protocol Networkable: GetRequestable, PostRequestable{
 }

@@ -25,7 +25,7 @@ struct OpenWeatherMapsRequest: RequestBuildable{
         self.requestType = type
         var endpoint: URL?
         switch type{
-        case .get: endpoint = URL(string: BaseURLStrings.openWeatherMaps+"q=\(city)"+"appid=\(apiKeys.openWeatherMaps)")
+        case .get: endpoint = URL(string: BaseURLStrings.openWeatherMaps+"q=\(city)"+"appid=\(ApiKeys.openWeatherMaps)")
         default: fatalError("Invalid request type. Expected .get recieved \(type)")
         }
         self.endpoint = endpoint
@@ -33,6 +33,18 @@ struct OpenWeatherMapsRequest: RequestBuildable{
 }
 //B
 struct GoogleTimeZoneRequest{
+    let requestType: RequestType
+    let endpoint: URL?
+    
+    init(type: RequestType, lat: String, lng: String){
+        self.requestType = type
+        var endpoint: URL?
+        switch type{
+        case .get: endpoint = URL(string: BaseURLStrings.googleTimeZone+"\(lat),"+"\(lng)&timestamp=1331161200&key=\(ApiKeys.googleTimeZone)")
+        default: fatalError("Invalid request type. Expected .get recieved \(type)")
+        }
+        self.endpoint = endpoint
+    }
 }
 //C
 struct MeetupRequest{
@@ -51,9 +63,9 @@ enum RequestType{
     }
 }
 
-struct apiKeys{
+struct ApiKeys{
     fileprivate static let openWeatherMaps = "26db8fa456dbb4ac68876d86cbaefc22"
-    fileprivate static let googleTimeZone = ""
+    fileprivate static let googleTimeZone = "AIzaSyAlTJ6_w_Pfy1nRatUt4qV1uj8436hMxEk"
     fileprivate static let Meetup = ""
 
 }
@@ -61,7 +73,7 @@ struct apiKeys{
 //So Im making these fileprivate because I dont see anyone else needing this information
 struct BaseURLStrings{
     fileprivate static let openWeatherMaps = "api.openweathermap.org/data/2.5/weather?"
-    fileprivate static let googleTimeZone = ""
+    fileprivate static let googleTimeZone = "“https://maps.googleapis.com/maps/api/timezone/json?location="
     fileprivate static let Meetup = ""
 }
 
