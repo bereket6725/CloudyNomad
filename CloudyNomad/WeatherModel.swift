@@ -8,8 +8,8 @@
 
 import Foundation
 
+//object made from data gathered from the openWeatherMapsAPI 
 struct WeatherModel: Parsable{
-    
     static func parseJSON(data: Data) -> [WeatherModel] {
         return [WeatherModel]()
     }

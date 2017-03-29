@@ -14,7 +14,7 @@ enum Result <T, E:Error>{
     case success(T)
     case failure(E)
 }
-
+//hopefully will be generic 
 class ViewModel{
     
     
