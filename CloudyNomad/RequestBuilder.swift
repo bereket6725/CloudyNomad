@@ -9,14 +9,6 @@
 import Foundation
 import Alamofire
 
-
-//Our result enum is generic because the success case may return a String, a WeatherModel Object or an EventModel Object
-//So we should make it Reusable
-enum Result <T, E:Error>{
-    case success(T)
-    case failure(E)
-}
-
 enum RequestType{
     case get
     case post([String: Any])
