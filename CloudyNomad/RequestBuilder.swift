@@ -66,7 +66,7 @@ enum RequestType{
 struct ApiKeys{
     fileprivate static let openWeatherMaps = "26db8fa456dbb4ac68876d86cbaefc22"
     fileprivate static let googleTimeZone = "AIzaSyAlTJ6_w_Pfy1nRatUt4qV1uj8436hMxEk"
-    fileprivate static let Meetup = ""
+    fileprivate static let Meetup = "4a465f213f5d8047321b627874238070"
 
 }
 //Our Request buildables will have the baseURLs and will create the URL that will eventually be sent in the request.
