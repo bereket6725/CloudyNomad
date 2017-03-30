@@ -33,7 +33,7 @@ struct ApiKeys{
 //So Im making these fileprivate because I dont see anyone else needing this information
 struct BaseURLStrings{
     fileprivate static let openWeatherMaps = "api.openweathermap.org/data/2.5/weather?"
-    fileprivate static let googleTimeZone = "“https://maps.googleapis.com/maps/api/timezone/json?location="
+    fileprivate static let googleTimeZone = "https://maps.googleapis.com/maps/api/timezone/json?location="
     fileprivate static let Meetup = ""
 }
 

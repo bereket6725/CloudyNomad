@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.4.0)
+  - Promise (1.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - Promise (~> 1.2)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Promise: 58518e80e6907041b7fa1694f3cd78c7abd758f4
 
-PODFILE CHECKSUM: 65e9f4b6dfead54ce4d3263ed1c59169469fcd06
+PODFILE CHECKSUM: 29b77a192b55c16e9f5a360bb268145663ba9ef5
 
 COCOAPODS: 1.2.0
